@@ -166,16 +166,17 @@ footer .redes a:hover {
     color: #ff4081;
 }
 
-/* MEDIA QUERIES PARA MEJOR RESPONSIVIDAD */
 @media (max-width: 768px) {
     header {
-        height: 250px;
-        padding: 20px 15px;
+        height: 180px; /* ANTES: 250px */
+        padding: 15px 10px;
+        background-size: cover;
+        background-position: center top;
     }
 
     .catalogo {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        padding: 40px 15px;
+        padding: 30px 15px;
     }
 
     .producto {
@@ -204,20 +205,20 @@ footer .redes a:hover {
 }
 
 @media (max-width: 480px) {
-   header {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center top;
-}
-
-
+    header {
+        height: 180px; /* NUEVO: aún más compacto para pantallas muy chicas */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding: 10px;
+    }
 
     header h1 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     header p {
-        font-size: 0.95em;
+        font-size: 0.9em;
     }
 
     .btn-whatsapp {
