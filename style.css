@@ -17,15 +17,17 @@ header {
     background-image: url("img/header.png");
     background-size: cover;
     background-position: center;
-    color: #f3f3f3;
+    color: #ffffff;
     text-align: center;
+    text-size-adjust: 100%;
+    text-shadow: #222;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 300px;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
 }
 
 header {
@@ -183,7 +185,7 @@ footer .redes a:hover {
 
 @media (max-width: 768px) {
     header {
-        height: 180px; /* ANTES: 250px */
+        height: 120px; /* ANTES: 250px */
         padding: 15px 10px;
         background-size: cover;
         background-position: center top;
@@ -207,6 +209,7 @@ header p {
     .catalogo {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         padding: 30px 15px;
+        background-size: 400px;
     }
 
     .producto {
@@ -236,26 +239,30 @@ header p {
 
 @media (max-width: 480px) {
     header {
-        height: 180px; /* NUEVO: aún más compacto para pantallas muy chicas */
+        height: 100px; /* NUEVO: aún más compacto para pantallas muy chicas */
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center top;
         padding: 10px;
-    }
-    header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
+        justify-content: flex-end; 
+        align-items: right;
+        text-align: center;
+        text-size-adjust: 70%;
+        text-shadow: #c5c998;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        }
 
 header h1,
 header p {
     margin: 0; /* Quita márgenes extra */
     padding: 0; /* Quita padding extra */
+    
 }
-
+    .catalogo{
+        background-size: 350px;
+    }
 
     header h1 {
         font-size: 1.4em;
