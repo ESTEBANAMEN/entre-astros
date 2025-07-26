@@ -205,8 +205,11 @@ footer .redes a:hover {
 
 @media (max-width: 480px) {
     header {
-        height: 230px;
+        height: 180px;
+        background-size: cover;
+        background-position: center;
     }
+
 
     header h1 {
         font-size: 1.5em;
